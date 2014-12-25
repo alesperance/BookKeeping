@@ -12,6 +12,22 @@ namespace Books_AL
 {
     public partial class Books : Form
     {
+        public string CURRENT_MONTH;
+
+        public Month January = new Month();
+        public Month February = new Month();
+        public Month March = new Month();
+        public Month April = new Month();
+        public Month May = new Month();
+        public Month June = new Month();
+        public Month July = new Month();
+        public Month August = new Month();
+        public Month September = new Month();
+        public Month October = new Month();
+        public Month November = new Month();
+        public Month December = new Month();
+
+
         public Books()
         {
             InitializeComponent();
@@ -30,8 +46,9 @@ namespace Books_AL
 
             else
             {
-                string month = monthSelectionBox.Text;
+                CURRENT_MONTH = monthSelectionBox.Text;
 
+                //Display the dialog box to enter in data
                 DataForm dataForm = new DataForm();
                 if (dataForm.ShowDialog() != DialogResult.OK) return;
                 dataForm.Show();

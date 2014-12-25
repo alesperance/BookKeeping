@@ -15,6 +15,7 @@ namespace Books_AL
         public DataForm()
         {
             InitializeComponent();
+            
         }
     }
 }
