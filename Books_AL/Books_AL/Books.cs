@@ -49,7 +49,7 @@ namespace Books_AL
                 CURRENT_MONTH = monthSelectionBox.Text;
 
                 //Display the dialog box to enter in data
-                DataForm dataForm = new DataForm();
+                DataForm dataForm = new DataForm(CURRENT_MONTH);
                 if (dataForm.ShowDialog() != DialogResult.OK) return;
                 dataForm.Show();
             }

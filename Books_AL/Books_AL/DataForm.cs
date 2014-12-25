@@ -12,10 +12,22 @@ namespace Books_AL
 {
     public partial class DataForm : Form
     {
-        public DataForm()
+
+        public DataForm(string currentMonth)
         {
             InitializeComponent();
-            
+            monthLabel.Text = currentMonth;
+
+        }
+
+        private void addButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void returnButton_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }
