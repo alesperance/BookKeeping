@@ -1,0 +1,10 @@
+C:\Users\Alex\Desktop\Books_AL\Books_AL\bin\Debug\Books_AL.exe.config
+C:\Users\Alex\Desktop\Books_AL\Books_AL\bin\Debug\Books_AL.exe
+C:\Users\Alex\Desktop\Books_AL\Books_AL\bin\Debug\Books_AL.pdb
+C:\Users\Alex\Desktop\Books_AL\Books_AL\obj\Debug\Books_AL.csprojResolveAssemblyReference.cache
+C:\Users\Alex\Desktop\Books_AL\Books_AL\obj\Debug\Books_AL.Properties.Resources.resources
+C:\Users\Alex\Desktop\Books_AL\Books_AL\obj\Debug\Books_AL.csproj.GenerateResource.Cache
+C:\Users\Alex\Desktop\Books_AL\Books_AL\obj\Debug\Books_AL.exe
+C:\Users\Alex\Desktop\Books_AL\Books_AL\obj\Debug\Books_AL.pdb
+C:\Users\Alex\Desktop\Books_AL\Books_AL\obj\Debug\Books_AL.Books.resources
+C:\Users\Alex\Desktop\Books_AL\Books_AL\obj\Debug\Books_AL.DataForm.resources
