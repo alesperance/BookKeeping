@@ -29,6 +29,7 @@ namespace Books_AL
                 {
                     double entry = Convert.ToDouble(amountEntryBox.Text);
                     getList(categorySelectionBox.Text).Add(entry);
+                    MessageBox.Show("added");
                 }
                 catch(Exception ex)
                 {
@@ -78,6 +79,21 @@ namespace Books_AL
                 default:
                     return null;
             }
+        }
+
+        private void totalButton_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Purchases: " + month.getTotals(month._listPurchases).ToString()
+                +"\n Supplies: " + month.getTotals(month._listSupplies).ToString()
+                + "\n Memberships: " + month.getTotals(month._listMembership).ToString()
+                + "\n Education: " + month.getTotals(month._listEducation).ToString()
+                + "\n Travel: " + month.getTotals(month._listTravel).ToString()
+                + "\n Postage: " + month.getTotals(month._listPostage).ToString()
+                + "\n Telephone: " + month.getTotals(month._listTelephone).ToString()
+                + "\n Rent: " + month.getTotals(month._listRent).ToString()
+                + "\n Insurance: " + month.getTotals(month._listInsurance).ToString());
+
+
         }
     }
 }

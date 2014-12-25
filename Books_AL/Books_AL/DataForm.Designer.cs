@@ -36,6 +36,7 @@
             this.amountLabel = new System.Windows.Forms.Label();
             this.addButton = new System.Windows.Forms.Button();
             this.returnButton = new System.Windows.Forms.Button();
+            this.totalButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // categorySelectionBox
@@ -100,9 +101,9 @@
             // 
             this.addButton.Enabled = false;
             this.addButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addButton.Location = new System.Drawing.Point(102, 174);
+            this.addButton.Location = new System.Drawing.Point(94, 157);
             this.addButton.Name = "addButton";
-            this.addButton.Size = new System.Drawing.Size(75, 23);
+            this.addButton.Size = new System.Drawing.Size(91, 23);
             this.addButton.TabIndex = 5;
             this.addButton.Text = "Add";
             this.addButton.UseVisualStyleBackColor = true;
@@ -111,19 +112,31 @@
             // returnButton
             // 
             this.returnButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.returnButton.Location = new System.Drawing.Point(102, 214);
+            this.returnButton.Location = new System.Drawing.Point(94, 215);
             this.returnButton.Name = "returnButton";
-            this.returnButton.Size = new System.Drawing.Size(75, 23);
+            this.returnButton.Size = new System.Drawing.Size(91, 23);
             this.returnButton.TabIndex = 6;
             this.returnButton.Text = "Return";
             this.returnButton.UseVisualStyleBackColor = true;
             this.returnButton.Click += new System.EventHandler(this.returnButton_Click);
+            // 
+            // totalButton
+            // 
+            this.totalButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.totalButton.Location = new System.Drawing.Point(94, 186);
+            this.totalButton.Name = "totalButton";
+            this.totalButton.Size = new System.Drawing.Size(91, 23);
+            this.totalButton.TabIndex = 7;
+            this.totalButton.Text = "View Totals";
+            this.totalButton.UseVisualStyleBackColor = true;
+            this.totalButton.Click += new System.EventHandler(this.totalButton_Click);
             // 
             // DataForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 262);
+            this.Controls.Add(this.totalButton);
             this.Controls.Add(this.returnButton);
             this.Controls.Add(this.addButton);
             this.Controls.Add(this.amountLabel);
@@ -148,5 +161,6 @@
         private System.Windows.Forms.Label amountLabel;
         private System.Windows.Forms.Button addButton;
         private System.Windows.Forms.Button returnButton;
+        private System.Windows.Forms.Button totalButton;
     }
 }

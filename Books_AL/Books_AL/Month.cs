@@ -59,5 +59,16 @@ namespace Books_AL
             _listInsurance  = new List<double>();
         }
 
+
+        public double getTotals(List<double> expenseList)
+        {
+            double total = 0;
+            foreach (double d in expenseList)
+            {
+                total += d;
+            }
+            return total;
+        }
+
     }
 }
