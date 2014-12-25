@@ -9,27 +9,27 @@ namespace Books_AL
     public class Month
     {
         //Lists of specific expenses
-        protected List<double> _listPurchases;
-        protected List<double> _listSupplies;
-        protected List<double> _listMembership;
-        protected List<double> _listEducation;
-        protected List<double> _listTravel;
-        protected List<double> _listPostage;
-        protected List<double> _listTelephone;
-        protected List<double> _listRent;
-        protected List<double> _listInsurance;
+        public List<double> _listPurchases   { get; private set; }
+        public List<double> _listSupplies { get; private set; }
+        public List<double> _listMembership { get; private set; }
+        public List<double> _listEducation { get; private set; }
+        public List<double> _listTravel { get; private set; }
+        public List<double> _listPostage { get; private set; }
+        public List<double> _listTelephone { get; private set; }
+        public List<double> _listRent { get; private set; }
+        public List<double> _listInsurance { get; private set; }
 
         //Fields for lists of expenses
-        protected double _totalPurchase     { get; private set; }
-        protected double _totalSupplies     { get; private set; }
-        protected double _totalMembership   { get; private set; }
-        protected double _totalEducation    { get; private set; }
-        protected double _totalTravel       { get; private set; }
-        protected double _totalPostage      { get; private set; }
-        protected double _totalTelephone    { get; private set; }
-        protected double _totalRent         { get; private set; }
-        protected double _totalInsurance    { get; private set; }
-        protected double _totalMonthly      { get; private set; }
+        public double _totalPurchase     { get; private set; }
+        public double _totalSupplies     { get; private set; }
+        public double _totalMembership   { get; private set; }
+        public double _totalEducation    { get; private set; }
+        public double _totalTravel       { get; private set; }
+        public double _totalPostage      { get; private set; }
+        public double _totalTelephone    { get; private set; }
+        public double _totalRent         { get; private set; }
+        public double _totalInsurance    { get; private set; }
+        public double _totalMonthly      { get; private set; }
 
         //Methods to add prices to the lists of expenses
         public void addPurchases(double purchase)       { _listPurchases.Add(purchase); }

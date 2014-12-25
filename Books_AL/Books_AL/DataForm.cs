@@ -28,7 +28,7 @@ namespace Books_AL
                 try
                 {
                     double entry = Convert.ToDouble(amountEntryBox.Text);
-
+                    getList(categorySelectionBox.Text).Add(entry);
                 }
                 catch(Exception ex)
                 {
@@ -49,6 +49,34 @@ namespace Books_AL
                 amountLabel.Visible = true;
                 amountEntryBox.Visible = true;
                 addButton.Enabled = true;
+            }
+        }
+
+        private List<double> getList(string expense)
+        {
+            string currentExpense = expense;
+            switch (currentExpense)
+            {
+                case "Purchases":
+                    return month._listPurchases;
+                case "Supplies":
+                    return month._listSupplies;
+                case "Memberships":
+                    return month._listMembership;
+                case "Education":
+                    return month._listEducation;
+                case "Travel":
+                    return month._listTravel;
+                case "Postage":
+                    return month._listPostage;
+                case "Telephone":
+                    return month._listTelephone;
+                case "Rent":
+                    return month._listRent;
+                case "Insurance":
+                    return month._listInsurance;
+                default:
+                    return null;
             }
         }
     }
