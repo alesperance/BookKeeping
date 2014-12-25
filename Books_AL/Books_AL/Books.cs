@@ -47,9 +47,8 @@ namespace Books_AL
             else
             {
                 CURRENT_MONTH = monthSelectionBox.Text;
-
                 //Display the dialog box to enter in data
-                DataForm dataForm = new DataForm(CURRENT_MONTH);
+                DataForm dataForm = new DataForm(CURRENT_MONTH, getMonthObj(CURRENT_MONTH));
                 if (dataForm.ShowDialog() != DialogResult.OK) return;
                 dataForm.Show();
             }
@@ -75,6 +74,41 @@ namespace Books_AL
         private void loadButton_Click(object sender, EventArgs e)
         {
             //TODO: load data
+        }
+
+        //Returns the current month object we need to pass along to the data form.
+        private Month getMonthObj(string currMonth)
+        {
+            string month = CURRENT_MONTH;
+            switch(month)
+            {
+                case "January":
+                    return January;
+                case "February":
+                    return February;
+                case "March":
+                    return March;
+                case "April":
+                    return April;
+                case "May":
+                    return May;
+                case "June":
+                    return June;
+                case "July":
+                    return July;
+                case "August":
+                    return August;
+                case "September":
+                    return September;
+                case "October":
+                    return October;
+                case "November":
+                    return November;
+                case "December":
+                    return December;
+                default:
+                    return null;
+            }
         }
     }
 }

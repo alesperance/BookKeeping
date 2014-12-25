@@ -32,8 +32,8 @@
             this.categorySelectionBox = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.monthLabel = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
+            this.amountEntryBox = new System.Windows.Forms.TextBox();
+            this.amountLabel = new System.Windows.Forms.Label();
             this.addButton = new System.Windows.Forms.Button();
             this.returnButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -55,6 +55,7 @@
             this.categorySelectionBox.Name = "categorySelectionBox";
             this.categorySelectionBox.Size = new System.Drawing.Size(121, 21);
             this.categorySelectionBox.TabIndex = 0;
+            this.categorySelectionBox.SelectedIndexChanged += new System.EventHandler(this.categorySelectionBox_SelectedIndexChanged);
             // 
             // label1
             // 
@@ -76,26 +77,28 @@
             this.monthLabel.TabIndex = 2;
             this.monthLabel.Text = "label2";
             // 
-            // textBox1
+            // amountEntryBox
             // 
-            this.textBox1.Location = new System.Drawing.Point(156, 122);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(103, 20);
-            this.textBox1.TabIndex = 3;
+            this.amountEntryBox.Location = new System.Drawing.Point(156, 122);
+            this.amountEntryBox.Name = "amountEntryBox";
+            this.amountEntryBox.Size = new System.Drawing.Size(103, 20);
+            this.amountEntryBox.TabIndex = 3;
+            this.amountEntryBox.Visible = false;
             // 
-            // label2
+            // amountLabel
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(12, 123);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(138, 16);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "Enter Amount To Add:";
-            this.label2.Visible = false;
+            this.amountLabel.AutoSize = true;
+            this.amountLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.amountLabel.Location = new System.Drawing.Point(12, 123);
+            this.amountLabel.Name = "amountLabel";
+            this.amountLabel.Size = new System.Drawing.Size(138, 16);
+            this.amountLabel.TabIndex = 4;
+            this.amountLabel.Text = "Enter Amount To Add:";
+            this.amountLabel.Visible = false;
             // 
             // addButton
             // 
+            this.addButton.Enabled = false;
             this.addButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.addButton.Location = new System.Drawing.Point(102, 174);
             this.addButton.Name = "addButton";
@@ -123,8 +126,8 @@
             this.ClientSize = new System.Drawing.Size(284, 262);
             this.Controls.Add(this.returnButton);
             this.Controls.Add(this.addButton);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.amountLabel);
+            this.Controls.Add(this.amountEntryBox);
             this.Controls.Add(this.monthLabel);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.categorySelectionBox);
@@ -141,8 +144,8 @@
         private System.Windows.Forms.ComboBox categorySelectionBox;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label monthLabel;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox amountEntryBox;
+        private System.Windows.Forms.Label amountLabel;
         private System.Windows.Forms.Button addButton;
         private System.Windows.Forms.Button returnButton;
     }
