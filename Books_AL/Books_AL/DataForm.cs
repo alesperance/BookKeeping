@@ -92,8 +92,6 @@ namespace Books_AL
                 + "\n Telephone: " + month.getTotals(month._listTelephone).ToString()
                 + "\n Rent: " + month.getTotals(month._listRent).ToString()
                 + "\n Insurance: " + month.getTotals(month._listInsurance).ToString());
-
-
         }
     }
 }

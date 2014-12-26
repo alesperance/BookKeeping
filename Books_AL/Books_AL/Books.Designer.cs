@@ -36,6 +36,7 @@
             this.mainEnterButton = new System.Windows.Forms.Button();
             this.mainExitButton = new System.Windows.Forms.Button();
             this.loadButton = new System.Windows.Forms.Button();
+            this.saveButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -91,7 +92,7 @@
             // mainEnterButton
             // 
             this.mainEnterButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mainEnterButton.Location = new System.Drawing.Point(105, 124);
+            this.mainEnterButton.Location = new System.Drawing.Point(105, 112);
             this.mainEnterButton.Name = "mainEnterButton";
             this.mainEnterButton.Size = new System.Drawing.Size(87, 28);
             this.mainEnterButton.TabIndex = 4;
@@ -102,7 +103,7 @@
             // mainExitButton
             // 
             this.mainExitButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mainExitButton.Location = new System.Drawing.Point(105, 192);
+            this.mainExitButton.Location = new System.Drawing.Point(105, 214);
             this.mainExitButton.Name = "mainExitButton";
             this.mainExitButton.Size = new System.Drawing.Size(87, 26);
             this.mainExitButton.TabIndex = 5;
@@ -113,7 +114,7 @@
             // loadButton
             // 
             this.loadButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.loadButton.Location = new System.Drawing.Point(105, 158);
+            this.loadButton.Location = new System.Drawing.Point(105, 180);
             this.loadButton.Name = "loadButton";
             this.loadButton.Size = new System.Drawing.Size(87, 28);
             this.loadButton.TabIndex = 6;
@@ -121,11 +122,23 @@
             this.loadButton.UseVisualStyleBackColor = true;
             this.loadButton.Click += new System.EventHandler(this.loadButton_Click);
             // 
+            // saveButton
+            // 
+            this.saveButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.saveButton.Location = new System.Drawing.Point(105, 146);
+            this.saveButton.Name = "saveButton";
+            this.saveButton.Size = new System.Drawing.Size(87, 28);
+            this.saveButton.TabIndex = 7;
+            this.saveButton.Text = "Save";
+            this.saveButton.UseVisualStyleBackColor = true;
+            this.saveButton.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Books
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 262);
+            this.Controls.Add(this.saveButton);
             this.Controls.Add(this.loadButton);
             this.Controls.Add(this.mainExitButton);
             this.Controls.Add(this.mainEnterButton);
@@ -150,6 +163,7 @@
         private System.Windows.Forms.Button mainEnterButton;
         private System.Windows.Forms.Button mainExitButton;
         private System.Windows.Forms.Button loadButton;
+        private System.Windows.Forms.Button saveButton;
     }
 }
 

@@ -12,8 +12,12 @@ namespace Books_AL
 {
     public partial class Books : Form
     {
+        //string representing the current month.  Used to pass data around
         public string CURRENT_MONTH;
 
+        /// <summary>
+        /// Initializing the months objects
+        /// </summary>
         public Month January = new Month();
         public Month February = new Month();
         public Month March = new Month();
@@ -27,7 +31,9 @@ namespace Books_AL
         public Month November = new Month();
         public Month December = new Month();
 
-
+        /// <summary>
+        /// Constructor for Books form.
+        /// </summary>
         public Books()
         {
             InitializeComponent();
@@ -74,9 +80,15 @@ namespace Books_AL
         private void loadButton_Click(object sender, EventArgs e)
         {
             //TODO: load data
+
         }
 
-        //Returns the current month object we need to pass along to the data form.
+
+        /// <summary>
+        /// Returns the current month object we need to pass along to the data form.
+        /// </summary>
+        /// <param name="currMonth">The current month</param>
+        /// <returns>The month object representing the current month</returns>
         private Month getMonthObj(string currMonth)
         {
             string month = CURRENT_MONTH;
@@ -109,6 +121,12 @@ namespace Books_AL
                 default:
                     return null;
             }
+        }
+
+        //Actually the save button.  I didn't update the button name before creating the method.  Damn things have no chill
+        private void button1_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }
